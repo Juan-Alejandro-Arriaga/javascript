@@ -1,4 +1,4 @@
-v#   Introducción a JavaScript
+#   Introducción a JavaScript
 Es un lenguaje de programación , la mayoria de los sitios utilizan *JavaScript* , es el lenguaje mas utlizado entre desarrolladores de software.
 
 Javascript es un lenguaje es un lenguaje dinamico ,adaptandose bien a la programación orientada a objetos.
