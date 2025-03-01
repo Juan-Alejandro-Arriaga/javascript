@@ -38,6 +38,3 @@ Se puede usar la función `console.log` para mostrar el texto y lo escrito en la
 ##  1.3 Un tour por JavaScript
 
 "*Js*" tiene la capacidad que una variable almacene un valor ya sea numerico ,cadena de texto o algun array con ser el mismo tipo de variable ,aunque una vez establecido no se puede cambiar entre tipos de valor de la variable.
-
-
-    
