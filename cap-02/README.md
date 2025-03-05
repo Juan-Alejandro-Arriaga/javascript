@@ -19,7 +19,7 @@ Tiene 2 estilos de comentario se puede usar `//` o `/* */`.
 ```
 
 ##  2.3 Literales
-Son los datos que aprecen directamente en un programa:
+Son los tipos de datos que aprecen directamente en un programa:
 
 #####   Ejemplos
 
