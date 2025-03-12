@@ -82,16 +82,16 @@ dígitos.
 ##### Ejemplo:
 
 ```javascript
-0;
-3;
-10000000;
+    0;
+    3;
+    10000000;
 ```
 
 Además reconoce valores hexadecimales (base 16) , el valor comienza con `0x` o `0X` , un dígito hexadecimal es un dígito el 0 al 9 o letras a (A) hasta f (F) ,ejemplo:
 
 ```javascript
-0xff;
-0xbadcafe;
+    0xff;
+    0xbadcafe;
 ```
 
 ### 3.2.2 Literales enteros
@@ -109,7 +109,7 @@ Estas literales pueden representarse por medio de notación exponencial.
 ##### Ejemplo:
 
 ```javascript
-6.02e23; // 6.02 × 10²³
+    6.02e23; // 6.02 × 10²³
 ```
 
 ##### SEPARADORES EN LITERAL NUMÉRICO
@@ -117,10 +117,10 @@ Estas literales pueden representarse por medio de notación exponencial.
 Puede utilizar guiones bajos dentro para dividir literales largos en fragmentos que sean más fáciles de leer:
 
 ```javascript
-let billion = 1_000_000_000; // Separar miles
-let bytes = 0x89_ab_cd_ef; // Separar bytes
-let bits = 0b0001_1101_0111; // Separador de "nibbles"
-let fraction = 0.123_456_789; // Funciona también en la parte de fracciones.
+    let billion = 1_000_000_000; // Separar miles
+    let bytes = 0x89_ab_cd_ef; // Separar bytes
+    let bits = 0b0001_1101_0111; // Separador de "nibbles"
+    let fraction = 0.123_456_789; // Funciona también en la parte de fracciones.
 ```
 
 ### 3.2.3 Aritmética en JavaScript
@@ -136,36 +136,36 @@ Los programas trabajan con utilizando los operadores aritméticos:
 Se añadió el objeto() **Math**:
 
 ```javascript
-Math.pow(2, 53); //Para potencias
-Math.round(0.6); //Se redondea al numero entero mas cercano
-Math.ceil(0.6); //Se redondea hacia arriba
-Math.floor(0.6); //Se redondea hacia abajo
-Math.abs(-5); //Valor absoluto
-Math.max(x, y, z); //Devuelve el argumento más grande
-Math.min(x, y, z); //Devuelve el argumento más pequeño
-Math.random(); //Numero aleatorio dentro de un rango en especifico
-Math.PI; //Circunferencias de un circulo
-Math.E; //La base del logaritmo natural
-Math.sqrt(3); //Raíz cuadrada
-Math.pow(3, 1 / 3); //Raíz cubica
-Math.sin(0); //Funciones trigonométricas (cos, atan, tan)
-Math.log(10); //Logaritmo natural de 10
-Math.log(10) / Math.LN10; //Base 10 logaritmo de 100
-Math.log(10) / Math.LN2; //Base 2 logaritmo natural de 512
-Math.exp(3); //Math.E al cubo
-Math.cbrt(27); // Raíz cubica
-Math.hypot(3, 4); // Raíz de cuadrada de la suma de los cuadrados
-Math.log10(100); // Base -10 logaritmo
-Math.log2(1024); // Base -2 logaritmo
-Math.log1p(x); // Logaritmo natural de (1+x)
-Math.expm1(x); // La inversa de Math.log1p()
-Math.sign(x); // -1, 0 o 1 para argumentos <, == o > 0
-Math.imul(2, 3); // Multiplicación optimizada de números enteros de 32 bits
-Math.clz32(0xf); // Número de bits cero iniciales en un entero de 32 bits
-Math.trunc(3.9); // Convertir a un entero truncando la parte fraccionaria
-Math.fround(x); // Redondear al número flotante de 32 bits más cercano
-Math.sinh(x); // Seno hiperbólico. También Math.cosh(),Math.tanh()
-Math.asinh(x); // Acosen hiperbólico. También Math.acosh(), Math.atanh()
+    Math.pow(2, 53); //Para potencias
+    Math.round(0.6); //Se redondea al numero entero mas cercano
+    Math.ceil(0.6); //Se redondea hacia arriba
+    Math.floor(0.6); //Se redondea hacia abajo
+    Math.abs(-5); //Valor absoluto
+    Math.max(x, y, z); //Devuelve el argumento más grande
+    Math.min(x, y, z); //Devuelve el argumento más pequeño
+    Math.random(); //Numero aleatorio dentro de un rango en especifico
+    Math.PI; //Circunferencias de un circulo
+    Math.E; //La base del logaritmo natural
+    Math.sqrt(3); //Raíz cuadrada
+    Math.pow(3, 1 / 3); //Raíz cubica
+    Math.sin(0); //Funciones trigonométricas (cos, atan, tan)
+    Math.log(10); //Logaritmo natural de 10
+    Math.log(10) / Math.LN10; //Base 10 logaritmo de 100
+    Math.log(10) / Math.LN2; //Base 2 logaritmo natural de 512
+    Math.exp(3); //Math.E al cubo
+    Math.cbrt(27); // Raíz cubica
+    Math.hypot(3, 4); // Raíz de cuadrada de la suma de los cuadrados
+    Math.log10(100); // Base -10 logaritmo
+    Math.log2(1024); // Base -2 logaritmo
+    Math.log1p(x); // Logaritmo natural de (1+x)
+    Math.expm1(x); // La inversa de Math.log1p()
+    Math.sign(x); // -1, 0 o 1 para argumentos <, == o > 0
+    Math.imul(2, 3); // Multiplicación optimizada de números enteros de 32 bits
+    Math.clz32(0xf); // Número de bits cero iniciales en un entero de 32 bits
+    Math.trunc(3.9); // Convertir a un entero truncando la parte fraccionaria
+    Math.fround(x); // Redondear al número flotante de 32 bits más cercano
+    Math.sinh(x); // Seno hiperbólico. También Math.cosh(),Math.tanh()
+    Math.asinh(x); // Acosen hiperbólico. También Math.acosh(), Math.atanh()
 ```
 
 La aritmética no genera errores en casos de desbordamiento , cuando esto pasa el resultado es un valor infinito y en el caso negativo es un infinito negativo.
@@ -179,29 +179,29 @@ JavaScript define las constantes globales **Infinity** y **NaN**, y también est
 ##### Ejemplo de objetos de números:
 
 ```javascript
-Infinity; //Un número positivo demasiado grande para representar
-Number.POSSIBLE_INFINITY;
-1 / 0; //Infinito
-Number.MAX_VALUE * 2; //Limite del infinito
+    Infinity; //Un número positivo demasiado grande para representar
+    Number.POSSIBLE_INFINITY;
+    1 / 0; //Infinito
+    Number.MAX_VALUE * 2; //Limite del infinito
 
-/*Se puede el mismo caso  con valores negativos*/
+    /*Se puede el mismo caso  con valores negativos*/
 
-NaN; // El valor que no es un número
-Number.NaN;
-0 / 0; // NaN
-Infinity / Infinity; // NaN
+    NaN; // El valor que no es un número
+    Number.NaN;
+    0 / 0; // NaN
+    Infinity / Infinity; // NaN
 
-Number.MIN_VALUE / 2 - // desbordamiento
-  Number.MIN_VALUE / 2 - // cero negativo
-  1 / Infinity - // cero negativo
-  0;
+    Number.MIN_VALUE / 2 - // desbordamiento
+    Number.MIN_VALUE / 2 - // cero negativo
+    1 / Infinity - // cero negativo
+    0;
 
-/*Mas propiedades*/
-Number.ParseInt();
-Number.ParseFloat();
-Number.isNaN(x);
-Number.isFinite(x);
-Number.isInteger(x);
+    /*Mas propiedades*/
+    Number.ParseInt();
+    Number.ParseFloat();
+    Number.isNaN(x);
+    Number.isFinite(x);
+    Number.isInteger(x);
 ```
 
 El valor **NaN** no se puede usar `x === NaN` para comprobar si una variable es NaN. En su lugar, se debe usar `x != x` o `Number.isNaN(x)`.
@@ -211,10 +211,10 @@ La función global **isNaN()** es similar a `Number.isNaN()`, pero con una difer
 El valor **-0** (cero negativo) también es peculiar. Aunque **se considera igual a 0 positivo**, incluso con `===`, se comporta de forma diferente al usarse como divisor:
 
 ```javascript
-let zero = 0;
-let negz = -0;
-zero === negz; //Estos son iguales.
-1 / zero === 1 / negz; //Infinito + y - no son iguales
+    let zero = 0;
+    let negz = -0;
+    zero === negz; //Estos son iguales.
+    1 / zero === 1 / negz; //Infinito + y - no son iguales
 ```
 
 ### 3.2.4 Errores de redondeo y de coma flotante binaria
@@ -230,11 +230,11 @@ La representación que se usa es una forma binaria ,representando con exactitud 
 ##### Ejemplo donde suele ocurrir este caso:
 
 ```javascript
-let x = 0.3 - 0.2; // Resultado seria .1
-let y = 0.2 - 0.1; // Resultado seria .1
-x === y; // Los dos valores no son los mismos
-x === 0.1; //.3 - .2 no dan como resultado .1
-y === 0.1; // .2 - .1 da como resultado .1
+    let x = 0.3 - 0.2; // Resultado seria .1
+    let y = 0.2 - 0.1; // Resultado seria .1
+    x === y; // Los dos valores no son los mismos
+    x === 0.1; //.3 - .2 no dan como resultado .1
+    y === 0.1; // .2 - .1 da como resultado .1
 ```
 
 Esto sucede por el error de redondeo debido a la diferencia entre aproximaciones.
@@ -252,10 +252,10 @@ Las literales de este se escriben como una cadena de dígitos seguida de una let
 ##### Ejemplo:
 
 ```javascript
-1234n; // BigInt no tan grande
-0b111111n; // BigInt binario
-0o7777n; // BigInt octal
-0x8000000000000000n; // => 2n**63n: entero de 64bits
+    1234n; // BigInt no tan grande
+    0b111111n; // BigInt binario
+    0o7777n; // BigInt octal
+    0x8000000000000000n; // => 2n**63n: entero de 64bits
 ```
 
 Se puede usar la función `BigInt()` para convertir números o cadenas a formato `BigInt`
@@ -263,9 +263,9 @@ Se puede usar la función `BigInt()` para convertir números o cadenas a formato
 ##### Ejemplo:
 
 ```javascript
-BigInt(Number.MAX_SAFE_INTEGER); // => 9007199254740991n
-let string = "1" + "0".repeat(100); // 1 seguido de 100 ceros
-BigInt(string); // 10n**100n
+    BigInt(Number.MAX_SAFE_INTEGER); // => 9007199254740991n
+    let string = "1" + "0".repeat(100); // 1 seguido de 100 ceros
+    BigInt(string); // 10n**100n
 ```
 
 Este funciona como cualquier otro número regular en JS , solo que la división elimina cualquier resto y redondea hacia abajo.
@@ -282,10 +282,10 @@ Los operadores de comparación si funciona con los número mixtos.
 ##### Ejemplo
 
 ```javascript
-1 < 2n; //  verdadero
-2 > 1n; //  verdadero
-0 == 0n; //  verdadero
-0 === 0n; // Falso , el "===" compara también los tipos
+    1 < 2n; //  verdadero
+    2 > 1n; //  verdadero
+    0 == 0n; //  verdadero
+    0 === 0n; // Falso , el "===" compara también los tipos
 ```
 
 ### 3.2.6 Fechas y tiempos
@@ -295,10 +295,10 @@ JS tiene la función `Date` con la que se manipulan y representan fechas y horas
 ##### Funciones acerca del tiempo.
 
 ```javascript
-let timestamp = Date.now(); // La hora actual como número
-let now = new Date(); // La hora actual como un objeto
-let ms = now.getTime(); // Convertido a milisegundos
-let iso = now.toISOString(); //  Convertir a una cadena en formato
+    let timestamp = Date.now(); // La hora actual como número
+    let now = new Date(); // La hora actual como un objeto
+    let ms = now.getTime(); // Convertido a milisegundos
+    let iso = now.toISOString(); //  Convertir a una cadena en formato
 ```
 
 ## 3.3 Texto
@@ -310,10 +310,10 @@ Este se representa por medio de una cadena , la cual es una secuencia ordenada d
 Js usa codificación "**utf-16**" todos los caracteres que excedan de los 16bits se codifican mediante este tipo de codificación, ejemplo:
 
 ```javascript
-let euro = "€";
-let love = "❤";
-euro.length; // Este es un elemento de 16 bits
-love.length; // Se codifica mediante utf-16
+    let euro = "€";
+    let love = "❤";
+    euro.length; // Este es un elemento de 16 bits
+    love.length; // Se codifica mediante utf-16
 ```
 
 ### 3.3.1 Literales de cadena
@@ -323,9 +323,9 @@ Para incluir una cadena se encierra el contenido entre comillas simples ('') o c
 ##### Ejemplo:
 
 ```javascript
-""; //Sin caracteres
-"abc"; //Cadena de letras
-"3.14"; //Cadena numérica
+    ""; //Sin caracteres
+    "abc"; //Cadena de letras
+    "3.14"; //Cadena numérica
 ```
 
 Anteriormente se requería que se escribiera la cadena en una sola linea ,actualmente se puede dividir colocando al final una barra invertida `\` y para dividir el texto e imprimirlo en una nueva linea se coloca una "_n_" después de la linea invertida.
@@ -333,8 +333,8 @@ Anteriormente se requería que se escribiera la cadena en una sola linea ,actual
 ##### Ejemplo:
 
 ```javascript
-"impresion\n2lineas";
-"Una cadena\
+    "impresion\n2lineas";
+    "Una cadena\
     de una linea\
     escrita en 3 lineas";
 ```
@@ -389,45 +389,45 @@ Se puede usar la propiedad `lenght` para determinar la longitud de una cadena.
 ##### Api´s de trabajo con cadenas
 
 ```javascript
-let s = "Hello, world"; //Texto base
-// Obtener partes de una cadena
-s.substring(1, 4); //Obtiene la posición 1-4
-s.slice(1, 4); // Mismo que la anterior
-s.slice(-3); // Últimos 3 caracteres
-s.split(", "); // Divide la cadena según el carácter especificado
+    let s = "Hello, world"; //Texto base
+    // Obtener partes de una cadena
+    s.substring(1, 4); //Obtiene la posición 1-4
+    s.slice(1, 4); // Mismo que la anterior
+    s.slice(-3); // Últimos 3 caracteres
+    s.split(", "); // Divide la cadena según el carácter especificado
 
-// Buscando en la cadena
-s.indexOf("l"); //Busca la posición de la letra
-s.indexOf("l", 3); // Posición de la letra o después del 3
-s.indexOf("zz"); // -1 si no indica la cadena especificada
-s.lastIndexOf("l"); // Ultima posición de la letra especificada
+    // Buscando en la cadena
+    s.indexOf("l"); //Busca la posición de la letra
+    s.indexOf("l", 3); // Posición de la letra o después del 3
+    s.indexOf("zz"); // -1 si no indica la cadena especificada
+    s.lastIndexOf("l"); // Ultima posición de la letra especificada
 
-// Funciones de búsqueda booleana en ES6 y versiones posteriores
-s.startsWith("Hell"); // Verdadero si la cadena comienza con lo que se indica
-s.endsWith("!"); // Verdadero si la cadena finaliza con lo que se indica
-s.includes("or"); // Verdadero si la cadena contiene lo que se indica
+    // Funciones de búsqueda booleana en ES6 y versiones posteriores
+    s.startsWith("Hell"); // Verdadero si la cadena comienza con lo que se indica
+    s.endsWith("!"); // Verdadero si la cadena finaliza con lo que se indica
+    s.includes("or"); // Verdadero si la cadena contiene lo que se indica
 
-// Modificando la cadena
-s.replace("llo", "ya"); //Cambia las letras llo , por ya
-s.toLowerCase(); // Convierte a minúsculas
-s.toUpperCase(); // Convierte a mayúsculas
+    // Modificando la cadena
+    s.replace("llo", "ya"); //Cambia las letras llo , por ya
+    s.toLowerCase(); // Convierte a minúsculas
+    s.toUpperCase(); // Convierte a mayúsculas
 
-// Inspección de caracteres individuales (16 bits) de una cadena
-s.charAt(0); // Busca cual es el carácter especificado
-s.charAt(s.length - 1); // busca cual es el ultimo carácter
-s.charCodeAt(0); // Número de 16 bits en la posición especificada
-s.codePointAt(0);
+    // Inspección de caracteres individuales (16 bits) de una cadena
+    s.charAt(0); // Busca cual es el carácter especificado
+    s.charAt(s.length - 1); // busca cual es el ultimo carácter
+    s.charCodeAt(0); // Número de 16 bits en la posición especificada
+    s.codePointAt(0);
 
-// Funciones de relleno de cadenas en ES2017
-"x".padStart(3); // Añade espacios a la izquierda según la longitud marcada
-"x".padEnd(3); // Añade espacios a la derecha según la longitud marcada
-"x".padStart(3, "*"); // Añade los elementos a la izquierda según la longitud marcada
-"x".padEnd(3, "-"); // Añade los elementos a la derecha según la longitud marcada
+    // Funciones de relleno de cadenas en ES2017
+    "x".padStart(3); // Añade espacios a la izquierda según la longitud marcada
+    "x".padEnd(3); // Añade espacios a la derecha según la longitud marcada
+    "x".padStart(3, "*"); // Añade los elementos a la izquierda según la longitud marcada
+    "x".padEnd(3, "-"); // Añade los elementos a la derecha según la longitud marcada
 
-// Funciones de recorte de espacio. trim()
-" test ".trim(); // Quita espacios en general
-" test ".trimStart(); //Quita espacios al inicio
-" test ".trimEnd(); // Quita espacios a la derecha
+    // Funciones de recorte de espacio. trim()
+    " test ".trim(); // Quita espacios en general
+    " test ".trimStart(); //Quita espacios al inicio
+    " test ".trimEnd(); // Quita espacios a la derecha
 ```
 
 ### 3.3.4 Literales de planta
@@ -439,8 +439,8 @@ Estos ademas de usarse como sintaxis de cadena , se pueden usar para incluir exc
 ##### Ejemplo:
 
 ```javascript
-let name = "Bill";
-let greeting = `Hello ${name}.`; // Se concatena el valor de la variable name
+    let name = "Bill";
+    let greeting = `Hello ${name}.`; // Se concatena el valor de la variable name
 ```
 
 Lo encontrado dentro de `${}` se interpretara como una expresión de JS
@@ -468,17 +468,17 @@ Suelen aparecer en las comparaciones de programas JS
 ##### Ejemplo:
 
 ```javascript
-a === 4;
+    a === 4;
 ```
 
 Este tipo de valores generalmente se usan en declaraciones de `if/else` , ejemplo:
 
 ```javascript
-if (a === 4) {
-  // Extra
-} else {
-  // Extra
-}
+    if (a === 4) {
+    // Extra
+    } else {
+    // Extra
+    }
 ```
 
 Cualquier valor de JS se puede convertir en un valor booleano.
@@ -486,11 +486,11 @@ Cualquier valor de JS se puede convertir en un valor booleano.
 Los siguientes valores son establecidos como "falsos"
 
 ```javascript
-undefined;
-null;
-0 - 0;
-NaN;
-(""); // una cadena vacía
+    undefined;
+    null;
+    0 - 0;
+    NaN;
+    (""); // una cadena vacía
 ```
 
 Y de ahi todos los demás valores se convierten en verdaderos.
@@ -500,9 +500,9 @@ Se pueden usar los operadores `&&`(and) y `||`(or) para evaluar diferentes situa
 ##### Ejemplo:
 
 ```javascript
-if ((x === 0 && y === 0) || z === 0) {
-  // Verdadero si x & y son iguales , o verdadero si z es igual a 0
-}
+    if ((x === 0 && y === 0) || z === 0) {
+    // Verdadero si x & y son iguales , o verdadero si z es igual a 0
+    }
 ```
 
 ## 3.5 null y undefined
@@ -517,15 +517,15 @@ Ambos son valores falsos que se comportan como tal , se recomienda evitar el uso
 Se introdujeron para que sirvieran como nombres de propiedades que no fueran cadenas, los símbolos pueden cumplir los siguientes propósitos:
 
 ```javascript
-let strname = "string name"; //Una cadena para usarse como nombre
-let symname = Symbol("propname"); // Un símbolo para usarse como propiedad de nombre
-typeof strname; // Esta es una cadena
-typeof symname; // Este es un símbolo
-let o = {}; // Crea un nuevo objeto
-o[strname] = 1; // Define la propiedad con un nombre string
-o[symname] = 2; // Define la propiedad con un símbolo
-o[strname]; // Acceso a la propiedad nombrada con string
-o[symname]; // Acceso a la propiedad nombrada con símbolo
+    let strname = "string name"; //Una cadena para usarse como nombre
+    let symname = Symbol("propname"); // Un símbolo para usarse como propiedad de nombre
+    typeof strname; // Esta es una cadena
+    typeof symname; // Este es un símbolo
+    let o = {}; // Crea un nuevo objeto
+    o[strname] = 1; // Define la propiedad con un nombre string
+    o[symname] = 2; // Define la propiedad con un símbolo
+    o[strname]; // Acceso a la propiedad nombrada con string
+    o[symname]; // Acceso a la propiedad nombrada con símbolo
 ```
 
 Al no tener una sintaxis literal , se llama a la función `Symbol()`, y nunca devuelve el mismo valor 2 veces, se puede usar para agregar nombre a una propiedad sin preocuparse que haya alguna repetición en ello.
@@ -535,9 +535,9 @@ La función `Symbol()` toma un argumento opcional de cadena y devuelve un valor 
 `.for()` como exención a `Symbol` sirve como:
 
 ```javascript
-let s = Symbol.for("compartir"); //.for devuelve el mismo valor cuando se llama a la misma cadena
-let t = Symbol.for("compartir");
-s === t; // => verdadero
+    let s = Symbol.for("compartir"); //.for devuelve el mismo valor cuando se llama a la misma cadena
+    let t = Symbol.for("compartir");
+    s === t; // => verdadero
 ```
 
 ## 3.7 El objeto global
@@ -558,8 +558,8 @@ Existe una diferencia entre objetos de JS:
 - **primitivos(inmutables)**:Es decir que no existe manera alguna de cambiar, en el caso de usarse , solo se altera el valor cuando se devuelve creando un nuevo valor , ejemplo:
 
 ```javascript
-let s = "hello"; // Texto base
-s.toUpperCase(); // Regresa el texto con la modificación sin alterar el contenido de la variable
+    let s = "hello"; // Texto base
+    s.toUpperCase(); // Regresa el texto con la modificación sin alterar el contenido de la variable
 ```
 
 Dentro de este tipo , solo se pueden comparar por valor , es decir , dos valores son iguales solo si tienen el mismo valor.
@@ -567,9 +567,9 @@ Dentro de este tipo , solo se pueden comparar por valor , es decir , dos valores
 - **objetos(mutables)**:Es decir que se puede alterar su contenido, ejemplo:
 
 ```javascript
-let o = { x: 1 }; // Objeto inicial
-o.x = 2; // Muta si el valor se cambia
-o.y = 3; // Muta si se añade algún valor
+    let o = { x: 1 }; // Objeto inicial
+    o.x = 2; // Muta si el valor se cambia
+    o.y = 3; // Muta si se añade algún valor
 ```
 
 Los objetos no se comparan por valor,inclusive si tienen las mismas propiedades, estos se comparan por medio de referencias.
@@ -577,11 +577,11 @@ Los objetos no se comparan por valor,inclusive si tienen las mismas propiedades,
 ##### Ejemplo:
 
 ```javascript
-let a = []; // La variable hace referencia a un arreglo vacío
-let b = a; // b se referencia al arreglo vacío
-b[0] = 1; // cambiamos el array desde la variable b
-a[0]; // El cambio se puede apreciar en a
-a === b; // Los dos son iguales
+    let a = []; // La variable hace referencia a un arreglo vacío
+    let b = a; // b se referencia al arreglo vacío
+    b[0] = 1; // cambiamos el array desde la variable b
+    a[0]; // El cambio se puede apreciar en a
+    a === b; // Los dos son iguales
 ```
 
 ## 3.9 Conversiones de tipo
@@ -591,8 +591,8 @@ El lenguaje de JS es flexible en el ámbito de la conversión de valores , en el
 ##### Ejemplos:
 
 ```javascript
-10 + " objects"; // El "10" se convierte a cadena
-"7" * "4"; // Ambos se convierten a números
+    10 + " objects"; // El "10" se convierte a cadena
+    "7" * "4"; // Ambos se convierten a números
 ```
 
 ### 3.9.1 Conversiones y igualdad
@@ -603,20 +603,20 @@ JS tiene 2 operadores para comprobar si dos valores son iguales:
 - **==**: Este operador es mas flexible y mas permisivo, ejemplos:
 
 ```javascript
-null == undefined; // verdadero Estos dos valores se tratan como iguales
-"0" == 0; // verdadero , la cadena se convierte a numero antes de comparar
-0 == false; // verdadero , el booleano se convierte a numero antes de comparar
-"0" == false; // verdadero , ambos se convierten a numero antes de comparar
+    null == undefined; // verdadero Estos dos valores se tratan como iguales
+    "0" == 0; // verdadero , la cadena se convierte a numero antes de comparar
+    0 == false; // verdadero , el booleano se convierte a numero antes de comparar
+    "0" == false; // verdadero , ambos se convierten a numero antes de comparar
 ```
 
 ### 3.9.2 Convecciones explicitas
 
-Estas se usa en casos donde se necesiten hacer este tipo de conversiones o cuando se quiera hacerlo para tener un código mas limpio , la forma mas sencilla de hacerlo es usando funciones como:
+Estos son convertidores de datos , como se puede apreciar en los siguientes ejemplos, cambiándolos a tipo numérico , cadena de texto o booleano , la sintaxis es la siguiente que se muestra:
 
 ```javascript
-Number("3"); // 3, lo convierte a numero
-String(false); // "false", lo convierte a cadena
-Boolean([]); // verdadero , lo convierte a valor booleano
+    Number("3"); // 3, lo convierte a numero
+    String(false); // "false", lo convierte a cadena
+    Boolean([]); // verdadero , lo convierte a valor booleano
 ```
 
 Estos también se pueden invocar con `new` como constructor , en el caso de ser asi, este objeto sera como un "envoltorio" que se comporta como un valor "*booleano*" , de "*cadena*" o "*numérico*" ,y según el libro nunca hay una buena razón para usarlos.
