@@ -68,7 +68,7 @@ console.log("Operadores de igualdad");
 console.log(1 == 1);
 console.log(1 === "1");
 
-console.log("Operadores de compraación");
+console.log("Operadores de comparación");
 console.log(1 < 2);
 console.log(1 > 2);
 console.log(1 <= 2);
