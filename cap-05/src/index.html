@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Capitulo 5
+        </title>
+    </head>
+    <body>
+        <div class="cuerpo-condicionales-1">
+            <button 
+                onclick="getPulsado(1)" 
+            >
+                Si
+            </button>
+            <button 
+                onclick="getPulsado(2)"
+            >
+                No
+            </button>
+            <label id="cuerpo-1-label">
+                
+            </label>
+        </div>
+        <div class="cuerpo-condicionales-2">
+            <select 
+                id="seleccionador-colores"
+                onchange="getCambio()"
+            >
+                <option>
+                </option>
+                <option value="1">
+                    Azul
+                </option>
+                <option value="2">
+                    Rojo
+                </option>
+                <option value="3">
+                    Verde
+                </option>
+            </select>
+            <p id="p-color">
+                COLOR
+            </p>
+        </div>
+        <div class="cuerpo-loops-1">
+            <button onclick="getLoops()">
+                Click para iniciar los bucles
+            </button>
+            <p id="repeticiones-1">
+
+            </p>
+            <p id="repeticiones-2">
+
+            </p>
+        </div>
+        <div class="cuerpo-loops-2">
+            <label>
+                Selecciona la cantidad de repeticiones
+            </label>
+            <input 
+                id="repeticion"
+                max="10" 
+                min="1" 
+                onchange="getNewnumber()"
+                type="number"
+            >
+            <p id="historial">
+                Historial
+            </p>
+            <button onclick="getHistorial()">
+                Enviar
+            </button>
+        </div>
+        <script src="funciones/conditionals.js"></script>
+        <script src="funciones/loops.js"></script>
+    </body>
+</html>
