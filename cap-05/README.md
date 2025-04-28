@@ -67,7 +67,7 @@ Un bloque de declaración es una secuencia de declaraciones dentro de llaves `{}
         x = Math.Pi;
         cx = Math.cos(x);
         console.log("cos(π) = " + cx)
-    } q
+    } 
 ```
 
 Algunas cosas a destacar de este bloque son:
@@ -207,7 +207,6 @@ Las declaraciones dentro de `switch` se manejan por grupos de casos , declarados
         case 2: // Su condición es n === 2
             break;  // Detiene
         default:    // Si todo falla o no se selecciona una opción
-            break;  //Detiene
     }
 ```
 
@@ -293,8 +292,9 @@ De igual manera `for` permite recorrer estructuras de datos ,entre otros.
 #####   Ejemplo del libro:
 ```javascript
     function tail(o) { // Retorna el ultimo elemento de la lista
-    for(; o.next; o = o.next) ; // Continua mientras o.next sea verdadero
-        return o;
+        for(; o.next; o = o.next) { // Continua mientras o.next sea verdadero
+            return o;
+        }
     }
 ```
 

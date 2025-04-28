@@ -26,3 +26,19 @@ function getHistorial() {
         Hist.innerText = "Historial: " + historial.join(", ");
     }
 }
+
+function showCharacteristics() {
+    const lista = document.getElementById('CharINfo');
+    const usuario = {
+        nombre: "Alejandro",
+        edad: 17,
+        pais: "México Mágico",
+        profesion: "Chalan"
+    };
+    for (let propiedad in usuario) {
+        const item = document.createElement('li');
+        item.textContent = `${propiedad}: ${usuario[propiedad]}`;
+        lista.appendChild(item);
+      }
+}
+
