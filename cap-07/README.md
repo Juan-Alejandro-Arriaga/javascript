@@ -351,4 +351,3 @@ Las cadenas de texto se pueden tratar de forma similar a los arreglos, ya que pe
 Sin embargo, las cadenas son inmutables, por lo que no se pueden modificar directamente como un arreglo.
 
 
-
